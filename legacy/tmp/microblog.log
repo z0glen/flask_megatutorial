@@ -1,0 +1,104 @@
+2017-05-03 22:03:06,518 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-03 22:32:48,827 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-03 22:34:38,327 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 17:40:04,354 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 17:40:56,706 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 17:56:58,534 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 20:15:25,213 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 20:16:23,886 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 20:17:17,995 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 20:17:57,921 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 20:28:33,788 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 21:53:44,520 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 21:53:50,629 ERROR: Exception on /index [GET] [in C:\Users\yakba\Anaconda3\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\views.py", line 22, in index
+    posts=posts)
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Users\yakba\Anaconda3\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2017-05-04 21:55:09,327 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 21:55:10,077 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 21:57:58,996 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 21:58:02,882 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 21:58:11,749 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 21:58:12,452 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 22:04:24,264 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 22:06:13,123 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 22:06:13,831 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 22:17:10,459 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 22:17:11,131 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 22:21:41,510 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 22:21:42,202 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 22:27:22,653 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-04 22:27:23,418 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 15:36:06,657 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 15:36:31,173 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 15:38:44,888 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 15:58:11,522 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 15:59:07,849 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:00:27,906 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:00:56,967 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:03:02,449 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:05:39,454 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:07:53,112 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:08:20,752 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:09:03,984 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:09:45,452 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:13:00,775 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:13:01,764 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:14:10,656 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:17:22,359 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:17:23,268 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:26:14,990 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:26:15,828 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:27:03,840 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 16:33:02,857 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:35]
+2017-05-05 22:08:03,584 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 22:08:33,991 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 22:27:05,627 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 22:36:18,647 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:01:25,138 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:06:16,747 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:11:04,475 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:13:38,789 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:16:17,516 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:28:44,524 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:53:36,771 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:53:37,726 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:54:36,161 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-05 23:54:37,022 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:37]
+2017-05-06 20:23:34,183 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:40]
+2017-05-06 20:23:35,567 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:40]
+2017-05-07 22:46:30,533 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:42]
+2017-05-07 22:46:32,373 INFO: microblog startup [in C:\Users\yakba\Desktop\flask-MEGATUTORIAL\app\__init__.py:42]
