@@ -1,4 +1,5 @@
 from datetime import datetime
+<<<<<<< HEAD
 from app import db, login, app
 from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -7,10 +8,26 @@ from time import time
 import jwt
 
 followers = db.Table('followers',
+=======
+from hashlib import md5
+from time import time
+from flask_login import UserMixin
+from werkzeug.security import generate_password_hash, check_password_hash
+import jwt
+from app import app, db, login
+
+
+followers = db.Table(
+    'followers',
+>>>>>>> 566fa6331c3bce3dd2083961b9c8ded3803312b2
     db.Column('follower_id', db.Integer, db.ForeignKey('user.id')),
     db.Column('followed_id', db.Integer, db.ForeignKey('user.id'))
 )
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 566fa6331c3bce3dd2083961b9c8ded3803312b2
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), index=True, unique=True)
@@ -21,8 +38,13 @@ class User(UserMixin, db.Model):
     last_seen = db.Column(db.DateTime, default=datetime.utcnow)
     followed = db.relationship(
         'User', secondary=followers,
+<<<<<<< HEAD
         primaryjoin=(followers.c.follower_id==id),
         secondaryjoin=(followers.c.followed_id==id),
+=======
+        primaryjoin=(followers.c.follower_id == id),
+        secondaryjoin=(followers.c.followed_id == id),
+>>>>>>> 566fa6331c3bce3dd2083961b9c8ded3803312b2
         backref=db.backref('followers', lazy='dynamic'), lazy='dynamic')
 
     def __repr__(self):
@@ -49,12 +71,21 @@ class User(UserMixin, db.Model):
 
     def is_following(self, user):
         return self.followed.filter(
+<<<<<<< HEAD
             followers.c.followed_id==user.id).count() > 0
 
     def followed_posts(self):
         followed = Post.query.join(
             followers, (followers.c.followed_id==Post.user_id)).filter(
                 followers.c.follower_id==self.id)
+=======
+            followers.c.followed_id == user.id).count() > 0
+
+    def followed_posts(self):
+        followed = Post.query.join(
+            followers, (followers.c.followed_id == Post.user_id)).filter(
+                followers.c.follower_id == self.id)
+>>>>>>> 566fa6331c3bce3dd2083961b9c8ded3803312b2
         own = Post.query.filter_by(user_id=self.id)
         return followed.union(own).order_by(Post.timestamp.desc())
 
@@ -67,11 +98,24 @@ class User(UserMixin, db.Model):
     def verify_reset_password_token(token):
         try:
             id = jwt.decode(token, app.config['SECRET_KEY'],
+<<<<<<< HEAD
                 algorithms=['HS256'])['reset_password']
+=======
+                            algorithms=['HS256'])['reset_password']
+>>>>>>> 566fa6331c3bce3dd2083961b9c8ded3803312b2
         except:
             return
         return User.query.get(id)
 
+<<<<<<< HEAD
+=======
+
+@login.user_loader
+def load_user(id):
+    return User.query.get(int(id))
+
+
+>>>>>>> 566fa6331c3bce3dd2083961b9c8ded3803312b2
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.String(140))
@@ -80,7 +124,10 @@ class Post(db.Model):
 
     def __repr__(self):
         return '<Post {}>'.format(self.body)
+<<<<<<< HEAD
 
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))
+=======
+>>>>>>> 566fa6331c3bce3dd2083961b9c8ded3803312b2
