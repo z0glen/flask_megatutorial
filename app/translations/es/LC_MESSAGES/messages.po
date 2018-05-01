@@ -256,4 +256,3 @@ msgstr "Seguir"
 #: app/templates/user.html:19
 msgid "Unfollow"
 msgstr "Dejar de seguir"
-
