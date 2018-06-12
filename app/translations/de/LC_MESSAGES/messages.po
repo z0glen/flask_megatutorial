@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-21 01:03-0400\n"
+"POT-Creation-Date: 2018-06-11 23:59-0400\n"
 "PO-Revision-Date: 2018-04-30 23:44-0400\n"
 "Last-Translator: \n"
 "Language: de\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.5.3\n"
 
-#: app/__init__.py:19
+#: app/__init__.py:21
 msgid "Please log in to access this page."
 msgstr "Bitte anmelden um Zugriff auf diese Seite zu erlangen."
 
@@ -165,12 +165,20 @@ msgstr "Sie können sich nicht entfolgen!"
 msgid "You are not following %(username)s."
 msgstr "Sie folgen %(username)s nicht."
 
-#: app/main/routes.py:165
+#: app/main/routes.py:166
 msgid "Your message has been sent."
 msgstr ""
 
-#: app/main/routes.py:167
+#: app/main/routes.py:168
 msgid "Send Message"
+msgstr ""
+
+#: app/main/routes.py:204
+msgid "An export task is currently in progress"
+msgstr ""
+
+#: app/main/routes.py:206
+msgid "Exporting posts..."
 msgstr ""
 
 #: app/templates/404.html:4 app/templates/errors/404.html:4
@@ -213,15 +221,15 @@ msgstr "Anmeldung"
 msgid "Messages"
 msgstr ""
 
-#: app/templates/base.html:40
+#: app/templates/base.html:46
 msgid "Profile"
 msgstr "Profil"
 
-#: app/templates/base.html:41
+#: app/templates/base.html:47
 msgid "Logout"
 msgstr "Ausloggen"
 
-#: app/templates/base.html:78
+#: app/templates/base.html:96
 msgid "Error: Could not contact server."
 msgstr ""
 
@@ -230,11 +238,11 @@ msgstr ""
 msgid "Hi, %(username)s!"
 msgstr "Hallo, %(username)s!"
 
-#: app/templates/index.html:17 app/templates/user.html:36
+#: app/templates/index.html:17 app/templates/user.html:41
 msgid "Newer posts"
 msgstr "Neuere Beiträge"
 
-#: app/templates/index.html:22 app/templates/user.html:41
+#: app/templates/index.html:22 app/templates/user.html:46
 msgid "Older posts"
 msgstr "Ältere Beiträge"
 
@@ -305,15 +313,19 @@ msgstr "%(count)d folgendes"
 msgid "Edit your profile"
 msgstr "Bearbeite dein Profil"
 
-#: app/templates/user.html:17 app/templates/user_popup.html:27
+#: app/templates/user.html:18
+msgid "Export your posts"
+msgstr ""
+
+#: app/templates/user.html:22 app/templates/user_popup.html:27
 msgid "Follow"
 msgstr "Folgen"
 
-#: app/templates/user.html:19 app/templates/user_popup.html:31
+#: app/templates/user.html:24 app/templates/user_popup.html:31
 msgid "Unfollow"
 msgstr "Entfolgen"
 
-#: app/templates/user.html:23
+#: app/templates/user.html:28
 msgid "Send private message"
 msgstr ""
 

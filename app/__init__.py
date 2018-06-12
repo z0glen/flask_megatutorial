@@ -79,8 +79,8 @@ def create_app(config_class=Config):
         app.logger.setLevel(logging.INFO)
         app.logger.info('Microblog startup')
 
-        app.redis = Redis.from_url(app.config['REDIS_URL'])
-        app.task_queue = rq.Queue('microblog-tasks', connection=app.redis)
+    app.redis = Redis.from_url(app.config['REDIS_URL'])
+    app.task_queue = rq.Queue('microblog-tasks', connection=app.redis)
 
     return app
 
